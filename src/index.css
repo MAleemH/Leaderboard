@@ -1,0 +1,13 @@
+header {
+  padding: 50px 150px 0 150px;
+}
+
+main {
+  padding: 50px 200px 50px 200px;
+}
+
+.refresh-score-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
