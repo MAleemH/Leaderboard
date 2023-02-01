@@ -9,11 +9,8 @@
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="./index.css">
 
-<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 
 <body>
   <header>
@@ -62,13 +59,13 @@
 
                 <h3>Add your score</h3>
 
-                <form action="" method="">
+                <form id="formData">
 
-                    <input class="form-control mb-3" type="text" placeholder="Your name">
+                    <input id="nameInput" class="form-control mb-3" type="text" placeholder="Your name">
 
-                    <input class="form-control mb-3" type="text" placeholder="Your score">
+                    <input id="scoreInput" class="form-control mb-3" type="text" placeholder="Your score">
 
-                    <button type="button" class="btn btn-outline-secondary">Submit</button>
+                    <button id="formButton" type="button" class="btn btn-outline-secondary">Submit</button>
 
                 </form>
 
@@ -76,8 +73,6 @@
         </div>
     </div>
   </main>
-  <!-- JavaScript -->
-  <script src="./index.js" type="module"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
