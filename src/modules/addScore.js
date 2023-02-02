@@ -1,4 +1,4 @@
-import { url } from './api.js';
+import url from './api.js';
 
 const nameInput = document.querySelector('#nameInput');
 const scoreInput = document.querySelector('#scoreInput');
@@ -7,7 +7,7 @@ const addNewScore = async () => {
   const result = fetch(url, {
     method: 'POST',
     headers: {
-        'Content-Type': 'application/json; charset=UTF-8',
+      'Content-Type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify({
       user: nameInput.value,
@@ -18,6 +18,6 @@ const addNewScore = async () => {
   scoreInput.value = '';
   const apiResult = await result.json;
   return apiResult;
-}
+};
 
 export default addNewScore;

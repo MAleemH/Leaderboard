@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
 formButton.addEventListener('click', (e) => {
   e.preventDefault();
 
-  if(nameInput.value !== '' || scoreInput.value !== ''){
+  if (nameInput.value !== '' || scoreInput.value !== '') {
     addNewScore();
   }
 });

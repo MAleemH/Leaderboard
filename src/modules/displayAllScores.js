@@ -1,4 +1,5 @@
-import { url } from './api.js';
+import url from './api.js';
+
 const scoreCard = document.querySelector('#scoreCard');
 
 const getScores = async () => {
@@ -6,7 +7,7 @@ const getScores = async () => {
   const allData = await fetchScores.json();
   const output = allData.result;
   return output;
-}
+};
 
 const displayScores = async () => {
   const allScores = await getScores();
@@ -18,6 +19,6 @@ const displayScores = async () => {
     </tr>
     `;
   });
-}
+};
 
 export default displayScores;
