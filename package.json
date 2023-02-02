@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/MAleemH/Leaderboard/issues"
   },
-  "homepage": "https://github.com/MAleemH/Leaderboard#readme",
+  "homepage": "https://github.com/MAleemH/Leaderboard/dist/",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",

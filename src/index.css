@@ -1,5 +1,11 @@
 header {
+  font-style: italic;
+  color: #832232;
   padding: 50px 150px 0 150px;
+}
+
+h3 {
+  color: #ce8964;
 }
 
 main {
