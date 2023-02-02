@@ -1,19 +1,20 @@
+import { url } from './api.js';
+
 const nameInput = document.querySelector('#nameInput');
 const scoreInput = document.querySelector('#scoreInput');
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/bAk6Dqse7a5TBFyArmuy/scores/';
-
 const addNewScore = async (newScore) => {
-  const result = await fetch(url, {
+  const result = fetch(url, {
     method: 'POST',
     headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(newScore),
   });
   nameInput.value = '';
   scoreInput.value = '';
-  return newScore;
+  const apiResult = await result.json;
+  return apiResult;
 }
 
 export default addNewScore;
