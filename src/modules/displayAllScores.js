@@ -12,7 +12,7 @@ const getScores = async () => {
 const displayScores = async () => {
   const allScores = await getScores();
   scoreCard.innerHTML = '';
-  allScores.forEach(data => {
+  allScores.forEach((data) => {
     scoreCard.innerHTML += `
     <tr>
         <td>${data.user}: ${data.score}</td>
